@@ -26,10 +26,8 @@ Router1.get(config.routes.trade, async (req, res) => {
             }
         });
 
-        // Log the entire response to debug
-        console.log('API Response:', response.data);
+        // console.log('API Response:', response.data);
 
-        // Validate that 'Time Series (5min)' exists in the response data
         const data = response.data['Time Series (5min)'];
         if (!data) {
             return res.status(500).json({
@@ -37,7 +35,6 @@ Router1.get(config.routes.trade, async (req, res) => {
             });
         }
         
-        // Proceed to extract close values
         Object.keys(data).forEach(timestamp => {
             const closeValue = parseFloat(data[timestamp]['4. close']);
             closeValues.push(closeValue);
@@ -48,7 +45,6 @@ Router1.get(config.routes.trade, async (req, res) => {
         
         res.json({
             message: "check console for report",
-            finalProfitOrLoss  // Include the final profit or loss in the response if needed
         });
     } catch (err) {
         console.error('Error fetching data:', err); 
