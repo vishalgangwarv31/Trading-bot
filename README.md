@@ -1,6 +1,7 @@
 ### Asumption 
 1) I didnt found any api which gives real timestock price( even mock price) for free, hence i used Alpha Vantage for api which gives me latest 100 values 
 2) for trading i have used moving average crossover
+3) more detail about algo : https://trendspider.com/learning-center/moving-average-crossover-strategies/
 
 ### start project
 1) clone project into your fav IDE
