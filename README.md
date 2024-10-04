@@ -5,7 +5,7 @@
 ### start project
 1) clone project into your fav IDE
 2) run command : npm init
-3) for running project: index.js
+3) for running project: node index.js
 4) if something went wrong please check npm init or try installing each lib seperately
 
 ### Sample video
