@@ -1,5 +1,5 @@
 ### Asumption 
-1) I didnt found any api which gives real timestock price( even mock price) for free, hence i used Alpha Vantage for api which gives me latest 100 value per 5 mins 
+1) I didnt found any api which gives real timestock price( even mock price) for free, hence i used Alpha Vantage for api which gives me latest 100 values 
 2) for trading i have used moving average crossover
 
 ### start project
